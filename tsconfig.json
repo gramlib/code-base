@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "moduleResolution": "Node",
+    "target": "ES5",
+    "module": "ES6",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "inlineSourceMap": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "baseUrl": "./src",
+    "outDir": "./esm",
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "allowJs": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}

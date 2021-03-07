@@ -1,0 +1,46 @@
+{
+  "name": "code-starter",
+  "version": "0.0.1",
+  "scripts": {
+    "lint": "eslint ./src",
+    "test": "jest",
+    "build:esm": "gulp buildEsm",
+    "build": "npm run build:esm && rollup -c",
+    "prepublishOnly": "tnpm run build"
+  },
+  "types": "./esm/index.d.ts",
+  "module": "./esm/index.js",
+  "main": "./dist/index.js",
+  "dependencies": {
+    "inversify": "^5.0.5",
+    "reflect-metadata": "^0.1.13"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@types/jest": "^26.0.20",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-copy": "^4.0.1",
+    "gulp-ts-alias": "^1.3.0",
+    "gulp-typescript": "^5.0.1",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "rollup": "^2.35.1",
+    "rollup-plugin-dts": "^2.0.0",
+    "ts-jest": "^26.5.3",
+    "typescript": "^4.2.3"
+  },
+  "files": [
+    "esm",
+    "lib",
+    "package.json",
+    "README.md"
+  ]
+}
