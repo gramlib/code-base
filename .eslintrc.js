@@ -13,5 +13,6 @@ module.exports = {
     'prettier'
   ],
   rules: {
+    '@typescript-eslint/ban-types': 'off',
   },
 };

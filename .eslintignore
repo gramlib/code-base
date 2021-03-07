@@ -5,3 +5,6 @@
 /coverage
 /esm
 /src/common/base
+.eslintrc.js
+gulpfile.js
+rollup.config.js
