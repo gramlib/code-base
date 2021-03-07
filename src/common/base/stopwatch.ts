@@ -3,10 +3,6 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { globals } from '@/common/base/platform';
-
-const hasPerformanceNow = (globals.performance && typeof globals.performance.now === 'function');
-
 export class StopWatch {
 
 	private _highResolution: boolean;
@@ -18,7 +14,7 @@ export class StopWatch {
 	}
 
 	constructor(highResolution: boolean) {
-		this._highResolution = hasPerformanceNow && highResolution;
+		this._highResolution = highResolution;
 		this._startTime = this._now();
 		this._stopTime = -1;
 	}
@@ -35,6 +31,6 @@ export class StopWatch {
 	}
 
 	private _now(): number {
-		return this._highResolution ? globals.performance.now() : Date.now();
+		return Date.now();
 	}
 }
