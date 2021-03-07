@@ -1,1 +1,3 @@
-# a typescript lib starter repo
+# code-base: a typescript library
+
+Power by vscode source code
