@@ -1,5 +1,5 @@
 {
-  "name": "code-starter",
+  "name": "@alipay/code-base",
   "version": "0.0.1",
   "scripts": {
     "lint": "eslint ./src",
