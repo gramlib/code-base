@@ -21,6 +21,7 @@ export class Ninja implements IWarrior{
     }
 
     sneak(): string {
+        this.throwableWeapon.num = 3;
         return this.katana.hit();
     }
 }

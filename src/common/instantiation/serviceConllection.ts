@@ -16,7 +16,7 @@ export class ServiceCollection {
         ctor: new (...args: any[]) => T,
     ) {
         decorate(injectable(), ctor);
-        this._entries.bind(id).to(ctor);
+        this._entries.bind(id).to(ctor).inSingletonScope();
     }
 
     has(id: ServiceIdentifier<any>): boolean {

@@ -19,5 +19,6 @@ describe('test instantiation', () => {
 
         expect(ninja.sneak()).toBe(weapon.hit());
         expect(ninja.fight()).toBe(throwableWeapon.throw());
+        expect(throwableWeapon.num).toEqual(3);
     });
 })
