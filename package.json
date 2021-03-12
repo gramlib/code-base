@@ -39,7 +39,7 @@
   },
   "files": [
     "esm",
-    "lib",
+    "dist",
     "package.json",
     "README.md"
   ]
